@@ -124,7 +124,15 @@ You can make new scripts yourself by following the same steps above, but that is
 
 # Launching the Simulation:
 
-**Step 1:** 
+**Step 1: Open the Docker Desktop app and have a bash termainl open**  
+
+If you don't have a bash terminal open then run
+```bash
+bash
+```
+```bash
+cd mnt/c/Users/<your_user>
+```
 
 Make sure that you are in the /mnt/c/Users/<your_user>/scripts directory and run
 ```bash
