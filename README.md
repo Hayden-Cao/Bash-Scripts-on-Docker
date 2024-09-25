@@ -210,7 +210,7 @@ You should see the simulation open like so
 
 The rerun_sim.sh script requires an input which will be the name of the node you are trying to run
 
-My nodes folder currently has the safety_node and wall_follow which I can pass in as a parameter
+My nodes folder currently has the safety_node and wall_follow which I can pass in as a parameter  
 ![image](https://github.com/user-attachments/assets/de6dfb80-0d66-490e-8ca9-dafd22564523)
 
 If I want to run the wall_follow I would enter
