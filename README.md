@@ -46,7 +46,7 @@ cd scripts
 
 ## **Step 3:** Make a script to setup the simulation and give Docker access to the scripts  
 
-First you will run (Note: setup_sim is just the name I decided on you can name the script whatever you want just replace setup_sim with the name you chose)
+First you will run the following command to start making the scripts (Note: setup_sim is just the name I decided on you can name the script whatever you want just replace setup_sim with the name you chose)
 ```bash
 nano setup_sim.sh
 ```
