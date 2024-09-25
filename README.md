@@ -4,7 +4,7 @@
 
 **Note 1:** To copy and paste anything into the terminal use the Right Mouse Button  
 **Note 2:** I have only tried this on Windows machines running WSL  
-**Note 3:** I am using the Dev Containers extenstion on VSCode to let me edit the node file and have access to a split terminal on only VSCode
+**Note 3:** I am using the Dev Containers extenstion on VSCode to let me edit the node file and have access to a split terminal directly on VSCode. This also lets me not use Tmux but I believe the scripts will still work with Tmux but I have not checked.
 
 # Prerequisite:  
 This tutorial assumes you can open the simulation by entering each command manually  
@@ -42,8 +42,9 @@ First you will run (Note: setup_sim is just the name I decided on you can name t
 ```bash
 nano setup_sim.sh
 ```
-Your screen will be empty, but mine shows the script since I already wrote into the script
-![make_script](https://github.com/user-attachments/assets/e13150a0-1d6b-4186-a1b9-b939a3403aa5)
+You should see the screen below
+![image](https://github.com/user-attachments/assets/ef472736-369e-4644-81ab-503b4452fe64)
+
 
 Change <your_user> into the name of the user on your PC and paste into the script
 ```bash
