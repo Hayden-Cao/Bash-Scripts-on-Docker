@@ -8,7 +8,7 @@
 **Note 2:** I have only tried this on Windows machines running WSL  
 **Note 3:** I am using the Dev Containers extenstion on VSCode to let me edit the node file and have access to a split terminal directly on VSCode. This also lets me not use Tmux but I believe the scripts will still work with Tmux but I have not checked.
 
-# Prerequisite:  
+# Prerequisites:  
 This tutorial assumes you can open the simulation by entering each command manually  
 Install VSCode and the extension Dev Containers from the VSCode Marketplace
 
