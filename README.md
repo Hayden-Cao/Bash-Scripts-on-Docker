@@ -144,6 +144,15 @@ This will run the setup_sim.sh script and open up the Docker container. All othe
 
 **Step 2:** Open up VSCode and use the Dev Container Extension to remote into the container
 
+You can click on the Dev Container extension by finding the icon on the left side of the screen
+
+![image](https://github.com/user-attachments/assets/5e401b38-70d2-41ee-bb83-b94353951bd9)
+
+We can see that we have the scripts inside the Docker Container
+
+![image](https://github.com/user-attachments/assets/a1fbe7f6-d907-4370-b326-b70ce75a8b3a)
+
+
 **Step 3:** Change directories to /sim_ws and split the terminal using the built-in VSCode function  
 
 Run the command below if you need to change directories to /sim_ws
