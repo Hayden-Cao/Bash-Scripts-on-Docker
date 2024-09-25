@@ -72,9 +72,9 @@ chmod +x setup_sim.sh
 
 This will make sure the setup_sim.sh script is executable
 
-## **Step 4:** Make two other scripts one to run/start the simulation and the other to rerun
+## **Step 4:** Make the remaining scripts
 
-I named the script to run the simulation run_sim.sh   
+I named the script to run/open the simulation run_sim.sh. This will not run a node that will be in the rerun_sim.sh script
 Enter the command
 
 ```bash
@@ -126,6 +126,23 @@ ros2 run $NODE $NODE
 Make it executable
 ```bash
 chmod +x run_sim.sh
+```
+To exit press "Ctrl + X", then "Y", and "enter" to save and exit  
+
+Repeat the steps for the keyboard script
+Enter
+```bash
+nano keyboard.sh
+```
+Paste
+```bash
+source /opt/ros/foxy/setup.bash
+source install/local_setup.bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+Make it executable
+```bash
+chmod +x keyboard.sh
 ```
 To exit press "Ctrl + X", then "Y", and "enter" to save and exit  
 
