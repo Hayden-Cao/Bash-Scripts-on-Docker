@@ -217,7 +217,7 @@ If I want to run the wall_follow I would enter
 ```bash
 scripts/rerun_sim.sh wall_follow
 ```
-As we can see the wall_follow node is initialized correctly
+As we can see the wall_follow node is initialized correctly  
 ![image](https://github.com/user-attachments/assets/f6f7b29f-ff9e-4f94-b4cc-2a8a48a84c39)
 
 You can also rerun the simulation with another node by entering "Ctrl + C" to stop the current node running and running the script with a different parameter.  
