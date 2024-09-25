@@ -13,6 +13,6 @@ Install VSCode and the extension Dev Containers from the VSCode Marketplace
 
 **Step 1:** Open your terminal and run  
 ##
-    code/bash
+    bash
 
 
