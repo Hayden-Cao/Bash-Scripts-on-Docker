@@ -17,7 +17,7 @@ Install VSCode and the extension Dev Containers from the VSCode Marketplace
 bash
 ```
 ```bash
-cd mnt/c/Users/<your_user>
+cd /mnt/c/Users/<your_user>
 ```
 
 Make sure you change <your_user> with the name of the user on your PC
@@ -132,7 +132,7 @@ If you don't have a bash terminal open then run
 bash
 ```
 ```bash
-cd mnt/c/Users/<your_user>
+cd /mnt/c/Users/<your_user>/scripts
 ```
 
 Make sure that you are in the /mnt/c/Users/<your_user>/scripts directory and run
