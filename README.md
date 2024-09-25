@@ -34,7 +34,7 @@ mkdir scripts
 ```bash
 mkdir nodes
 ```
-When you download nodes put them into this nodes folder so we can mount it to the Docker container
+When you download nodes put them into this nodes folder so we can mount it to the Docker container. You will only need to drag the nodes into this folder once.
 ![image](https://github.com/user-attachments/assets/67c8bc6e-77f5-4fbb-9429-748c0575be14)
 
 
