@@ -22,9 +22,8 @@ cd /mnt/c/Users/<your_user>
 
 Make sure you change <your_user> with the name of the user on your PC
 
-I changed directories one by one but the end result should be /mnt/c/Users/<your_user> as seen below
+![image](https://github.com/user-attachments/assets/cbe137a4-a83e-4c53-8ca7-091542789d4e)
 
-![bash_cd](https://github.com/user-attachments/assets/7f2cdf6e-54e9-4d74-b31b-8a9b3cdc2383)
 
 
 ## **Step 2:** Make a directory for the scripts and nodes by running
