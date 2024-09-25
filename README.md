@@ -50,8 +50,9 @@ First you will run the following command to start making the scripts (Note: setu
 ```bash
 nano setup_sim.sh
 ```
-You should see the screen below. This is our script.
-![image](https://github.com/user-attachments/assets/ef472736-369e-4644-81ab-503b4452fe64)
+This will open up our script. Yours will be blank but I have already written into this file
+![image](https://github.com/user-attachments/assets/fae0d093-2e05-4d1d-bdba-512fd79418b2)
+
 
 
 Change <your_user> into the name of the user on your PC and paste into the script. There are 3 <your_user> that need to be replaced
