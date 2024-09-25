@@ -158,5 +158,6 @@ Split the terminal by clicking the ![icon](https://github.com/user-attachments/a
 The terminal will split like this
 ![terminal](https://github.com/user-attachments/assets/dfa5a892-958f-4c9b-a030-c3f0fd2977bb)
 
+This terminal split does the same thing that Tmux does with the split terminals without the extra commands. 
 
 
