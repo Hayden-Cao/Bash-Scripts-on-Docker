@@ -23,6 +23,7 @@ cd /mnt/c/Users/<your_user>
 Make sure you change <your_user> with the name of the user on your PC
 
 I did cd / to just show that the cd /mnt/c/Users/<your_user> command works because my directory was automatically at /mnt/c/Users/<your_user>
+
 ![image](https://github.com/user-attachments/assets/cbe137a4-a83e-4c53-8ca7-091542789d4e)
 
 ## **Step 2:** Make a directory for the scripts and nodes by running
