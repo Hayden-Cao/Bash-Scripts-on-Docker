@@ -58,7 +58,7 @@ Change <your_user> into the name of the user on your PC and paste into the scrip
 ```bash
 #!/bin/bash
 . ~/rocker_venv/bin/activate
-rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros/Users/caoha/f1tenth_gym_ros --volume /mnt/c/Users/caoha/scripts:/sim_ws/scripts --volume /mnt/c/Users/caoha/nodes:/sim_ws/src/nodes -- f1tenth_gym_ros
+rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros/Users/<your_user>/f1tenth_gym_ros --volume /mnt/c/Users/<your_user>/scripts:/sim_ws/scripts --volume /mnt/c/Users/<your_user>/nodes:/sim_ws/src/nodes -- f1tenth_gym_ros
 ```
 
 This is the similar to the normal command we use but the new argument --volume /mnt/c/Users/<your_user>/scripts:./sim_ws/scripts makes a new folder in the Docker container that will hold the scripts we make in our normal bash shell. We repeat the same step for the nodes folder.
