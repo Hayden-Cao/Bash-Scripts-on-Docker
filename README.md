@@ -35,4 +35,19 @@ cd scripts
 ```
 ![mkdri](https://github.com/user-attachments/assets/3e5c2adf-9b7f-4616-94ae-65498b35427f)
 
+**Step 3:** Make a script to setup the simulation and give Docker access to the scripts  
+
+First you will run (Note: setup_sim is just the name I decided on you can name the script whatever you want just replace setup_sim with the name you chose)
+```bash
+nano setup_sim.sh
+```
+Your screen will be empty, but mine shows the script since I already wrote into the script
+![make_script](https://github.com/user-attachments/assets/e13150a0-1d6b-4186-a1b9-b939a3403aa5)
+
+Change <your_user> into the name of the user on your PC and paste into the script
+```bash
+. ~/rocker_venv/bin/activate
+rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros/Users/<your_user>/f1tenth_gym_ros --volume /mnt/c/Users/<your_user>/scripts:/sim_ws/scripts -- f1tenth_gym_ros
+```
+
 
