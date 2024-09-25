@@ -139,7 +139,7 @@ Make sure that you are in the /mnt/c/Users/<your_user>/scripts directory and run
 ./setup_sim.sh
 ```
 
-This will open up the Docker container
+This will run the setup_sim.sh script and open up the Docker container. All other commands we use will be in the terminal created by the Docker Container
 
 **Step 2:** Open up VSCode and use the Dev Container Extension to remote into the container
 
@@ -159,5 +159,19 @@ The terminal will split like this
 ![terminal](https://github.com/user-attachments/assets/dfa5a892-958f-4c9b-a030-c3f0fd2977bb)
 
 This terminal split does the same thing that Tmux does with the split terminals without the extra commands. 
+
+**Step 4:** Run the rum_sim.sh script and launch the simulation  
+Enter the command in one of the terminals
+```bash
+scripts/run_sim.sh
+```
+
+The scripts/ in front of the name of the bash script tells the terminal that we want to use the script in the scripts folder  
+
+You should see the simulation open like so
+![sim_open](https://github.com/user-attachments/assets/600e993f-a3ff-4747-a560-e49fb9063dad)
+
+**Step 5:** Rerun the simulation with a node
+
 
 
