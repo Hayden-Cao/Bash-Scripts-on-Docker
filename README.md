@@ -51,5 +51,83 @@ Change <your_user> into the name of the user on your PC and paste into the scrip
 rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros/Users/<your_user>/f1tenth_gym_ros --volume /mnt/c/Users/<your_user>/scripts:/sim_ws/scripts -- f1tenth_gym_ros
 ```
 
-This is the similar to the normal command we use but the --volume /mnt/c/Users/<your_user>/scripts:./sim_ws/scripts makes a new folder in the Docker container that will hold the scripts we make in our normal bash shell
+This is the similar to the normal command we use but the --volume /mnt/c/Users/<your_user>/scripts:./sim_ws/scripts makes a new folder in the Docker container that will hold the scripts we make in our normal bash shell  
+
+To exit press "Ctrl + X", then "Y", and "enter" to save and exit
+
+After exiting enter the following command
+```bash
+chmod +x setup_sim.sh
+```
+
+This will make sure the setup_sim.sh script is executable
+
+## **Step 4:** Make two other scripts one to run/start the simulation and the other to rerun
+
+I named the script to run the simulation run_sim.sh   
+Enter the command
+
+```bash
+nano run_sim.sh
+```
+
+Then copy the code into the blank script file
+```bash
+#!/bin/bash
+source /opt/ros/foxy/setup.bash
+source install/local_setup.bash
+ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+```
+
+To exit press "Ctrl + X", then "Y", and "enter" to save and exit
+
+Then run the chmod command to make sure the script is executable
+```bash
+chmod +x run_sim.sh
+```
+
+Repeat the steps for the script rerun_sim.sh  
+Enter the command
+```bash
+nano rerun_sim.sh
+```
+
+Copy this into the blank script
+```bash
+#!/bin/bash
+colcon build
+source /opt/ros/foxy/setup.bash
+source install/local_setup.bash
+
+
+# Check if the user provided the node name input
+if [ "$#" -ne 1 ]; then
+    echo "Enter a node"
+    exit 1
+fi
+
+NODE=$1
+
+# Run the ROS2 node
+echo "Running node: $NODE"
+ros2 run $NODE $NODE
+```
+
+Make it executable
+```bash
+chmod +x run_sim.sh
+```
+To exit press "Ctrl + X", then "Y", and "enter" to save and exit
+
+# Launching the Simulation:
+
+Make sure that you are in the /mnt/c/Users/<your_user>/scripts directory and run
+```bash
+./setup_sim.sh
+```
+
+This will open up the Docker container. Now open up VSCode and use the Dev Container Extension to remote into the container
+
+
+
 
