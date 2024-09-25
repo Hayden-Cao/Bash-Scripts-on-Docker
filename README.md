@@ -6,7 +6,7 @@
 **Note 2: I have only tried this on Windows machines running WSL**
 
 # Prerequisite:  
-This tutorial assumes you can open the simulation by entering each command manually
+This tutorial assumes you can open the simulation by entering each command manually  
 Install VSCode and the extension Dev Containers from the VSCode Marketplace
 
 # Setup Steps:
