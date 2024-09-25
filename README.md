@@ -2,6 +2,8 @@
 
 **What you can do after this tutorial:** Have scripts that will start the docker container, open the sim, rerun the sim with a node, and open the keyboard control option all in VSCode. You also won't have to drag the nodes you want to run into the /sim_ws/src file directly.
 
+## Youtube video demoing the scripts: https://youtu.be/bZ_GQMrtvCI
+
 **Note 1:** To copy and paste anything into the terminal use the Right Mouse Button  
 **Note 2:** I have only tried this on Windows machines running WSL  
 **Note 3:** I am using the Dev Containers extenstion on VSCode to let me edit the node file and have access to a split terminal directly on VSCode. This also lets me not use Tmux but I believe the scripts will still work with Tmux but I have not checked.
