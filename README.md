@@ -1,6 +1,6 @@
 # Bash Script on Docker - Tutorial
 
-**Goal:** Create bash scripts that will let you setup, run, and rerun the simulation in Docker with scripts to avoid the hassle of typing and copy pasting multiple commands
+**What you can do after this tutorial:** Have scripts that will start the docker container, open the sim, rerun the sim with a node, and open the keyboard control option all in VSCode.
 
 **Note 1:** To copy and paste anything into the terminal use the Right Mouse Button  
 **Note 2:** I have only tried this on Windows machines running WSL  
@@ -27,10 +27,14 @@ I changed directories one by one but the end result should be /mnt/c/Users/<your
 ![bash_cd](https://github.com/user-attachments/assets/7f2cdf6e-54e9-4d74-b31b-8a9b3cdc2383)
 
 
-## **Step 2:** Make a new directory and make it the new working directory by running
+## **Step 2:** Make a directory for the scripts and nodes by running
 ```bash
 mkdir scripts
 ```
+```bash
+mkdir nodes
+```
+Change the working directory to scripts because we will make the scripts in here
 ```bash
 cd scripts
 ```
@@ -50,10 +54,10 @@ Change <your_user> into the name of the user on your PC and paste into the scrip
 ```bash
 #!/bin/bash
 . ~/rocker_venv/bin/activate
-rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros/Users/<your_user>/f1tenth_gym_ros --volume /mnt/c/Users/<your_user>/scripts:/sim_ws/scripts -- f1tenth_gym_ros
+rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros/Users/caoha/f1tenth_gym_ros --volume /mnt/c/Users/caoha/scripts:/sim_ws/scripts --volume /mnt/c/Users/caoha/nodes:/sim_ws/src/nodes -- f1tenth_gym_ros
 ```
 
-This is the similar to the normal command we use but the new argument --volume /mnt/c/Users/<your_user>/scripts:./sim_ws/scripts makes a new folder in the Docker container that will hold the scripts we make in our normal bash shell  
+This is the similar to the normal command we use but the new argument --volume /mnt/c/Users/<your_user>/scripts:./sim_ws/scripts makes a new folder in the Docker container that will hold the scripts we make in our normal bash shell. We repeat the same step for the nodes folder.
 
 To exit press "Ctrl + X", then "Y", and "enter" to save and exit
 
@@ -163,7 +167,7 @@ cd sim_ws
 
 If you are not in the /sim_ws directory the scripts will not work and can't find the needed files
 
-Split the terminal by clicking the ![icon](https://github.com/user-attachments/assets/f5e5ee96-5a61-4dff-a5f9-1bfa0dcc571c) icon found on the right side of the screen
+If you are using Dev Containers split the terminal by clicking the ![icon](https://github.com/user-attachments/assets/f5e5ee96-5a61-4dff-a5f9-1bfa0dcc571c) icon found on the right side of the screen
 
 The terminal will split like this
 ![terminal](https://github.com/user-attachments/assets/dfa5a892-958f-4c9b-a030-c3f0fd2977bb)
@@ -182,6 +186,24 @@ You should see the simulation open like so
 ![sim_open](https://github.com/user-attachments/assets/600e993f-a3ff-4747-a560-e49fb9063dad)
 
 **Step 5:** Rerun the simulation with a node
+
+The rerun_sim.sh script requires an input which will be the name of the node you are trying to run
+
+My nodes folder currently has the safety_node and wall_follow which I can pass in as a parameter
+![image](https://github.com/user-attachments/assets/de6dfb80-0d66-490e-8ca9-dafd22564523)
+
+If I want to run the wall_follow I would enter
+```bash
+scripts/rerun_sim.sh wall_follow
+```
+As we can see the wall_follow node is initialized correctly
+![image](https://github.com/user-attachments/assets/f6f7b29f-ff9e-4f94-b4cc-2a8a48a84c39)
+
+You can also rerun the simulation with another node by entering "Ctrl + C" to stop the current node running and running the script with a different parameter.  
+This is an example:  
+![image](https://github.com/user-attachments/assets/8083c6e2-8559-49b5-b9ca-fa3392cc34d3)
+
+
 
 
 
