@@ -26,7 +26,8 @@ I did cd / to just show that the cd /mnt/c/Users/<your_user> command works becau
 
 ![image](https://github.com/user-attachments/assets/cbe137a4-a83e-4c53-8ca7-091542789d4e)
 
-## **Step 2:** Make a directory for the scripts and nodes by running
+## **Step 2:** Make a directory for the scripts and nodes
+Run
 ```bash
 mkdir scripts
 ```
