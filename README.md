@@ -1,6 +1,6 @@
 # Bash Script on Docker - Tutorial
 
-**What you can do after this tutorial:** Have scripts that will start the docker container, open the sim, rerun the sim with a node, and open the keyboard control option all in VSCode.
+**What you can do after this tutorial:** Have scripts that will start the docker container, open the sim, rerun the sim with a node, and open the keyboard control option all in VSCode. You also won't have to drag the nodes you want to run into the /sim_ws/src file directly.
 
 **Note 1:** To copy and paste anything into the terminal use the Right Mouse Button  
 **Note 2:** I have only tried this on Windows machines running WSL  
