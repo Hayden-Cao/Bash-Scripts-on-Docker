@@ -46,6 +46,7 @@ Your screen will be empty, but mine shows the script since I already wrote into 
 
 Change <your_user> into the name of the user on your PC and paste into the script
 ```bash
+#!/bin/bash
 . ~/rocker_venv/bin/activate
 rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros/Users/<your_user>/f1tenth_gym_ros --volume /mnt/c/Users/<your_user>/scripts:/sim_ws/scripts -- f1tenth_gym_ros
 ```
