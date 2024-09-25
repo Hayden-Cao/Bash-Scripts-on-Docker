@@ -24,3 +24,15 @@ Make sure you change <your_user> with the name of the user on your PC
 I changed directories one by one but the end result should be /mnt/c/Users/<your_user> as seen below
 
 ![bash_cd](https://github.com/user-attachments/assets/7f2cdf6e-54e9-4d74-b31b-8a9b3cdc2383)
+
+
+**Step 2:** Make a new directory and make it the new working directory by running
+```bash
+mkdir scripts
+```
+```bash
+cd scripts
+```
+![mkdri](https://github.com/user-attachments/assets/3e5c2adf-9b7f-4616-94ae-65498b35427f)
+
+
