@@ -51,8 +51,7 @@ First you will run the following command to start making the scripts (Note: setu
 nano setup_sim.sh
 ```
 This will open up our script. Yours will be blank but I have already written into this file
-![image](https://github.com/user-attachments/assets/fae0d093-2e05-4d1d-bdba-512fd79418b2)
-
+![image](https://github.com/user-attachments/assets/b4b99ec0-6297-4693-8d74-17d92333dbb3)
 
 
 Change <your_user> into the name of the user on your PC and paste into the script. There are 3 <your_user> that need to be replaced
