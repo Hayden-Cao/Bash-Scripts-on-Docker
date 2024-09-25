@@ -2,8 +2,9 @@
 
 **Goal:** Create bash scripts that will let you setup, run, and rerun the simulation in docker with scripts to avoid the hassle of typing and copy pasting multiple commands
 
-**Note 1: To copy and paste anything into the terminal use the Right Mouse Button**  
-**Note 2: I have only tried this on Windows machines running WSL**
+**Note 1:** To copy and paste anything into the terminal use the Right Mouse Button  
+**Note 2:** I have only tried this on Windows machines running WSL  
+**Note 3:** I am using the Dev Containers extenstion on VSCode to let me edit the Python code and have access to a split terminal on just VSCode
 
 # Prerequisite:  
 This tutorial assumes you can open the simulation by entering each command manually  
