@@ -153,7 +153,7 @@ cd sim_ws
 
 If you are not in the /sim_ws directory the scripts will not work and can't find the needed files
 
-Split the terminal by clicking the icon ![icon](https://github.com/user-attachments/assets/f5e5ee96-5a61-4dff-a5f9-1bfa0dcc571c) found on the right side of the screen
+Split the terminal by clicking the ![icon](https://github.com/user-attachments/assets/f5e5ee96-5a61-4dff-a5f9-1bfa0dcc571c) icon found on the right side of the screen
 
 The terminal will split like this
 ![terminal](https://github.com/user-attachments/assets/dfa5a892-958f-4c9b-a030-c3f0fd2977bb)
