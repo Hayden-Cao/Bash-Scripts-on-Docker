@@ -5,10 +5,12 @@
 **Note 1: To copy and paste anything into the terminal use the Right Mouse Button**  
 **Note 2: I have only tried this on Windows machines running WSL**
 
-##**Prerequisite:**  
-Be able to run the simulation by typing each command individually  
+# Prerequisite:  
+This tutorial assumes you can open the simulation by entering each command manually
 Install VSCode and the extension Dev Containers from the VSCode Marketplace
 
-###**Setup Steps**
+# Setup Steps:
+
+**Step 1:** Open your terminal and run '''bash'''
 
 
