@@ -10,7 +10,7 @@
 This tutorial assumes you can open the simulation by entering each command manually  
 Install VSCode and the extension Dev Containers from the VSCode Marketplace
 
-# Setup Steps:
+# One Time Setup Steps:
 
 ## **Step 1:** Open your terminal and run  
 ```bash
@@ -118,9 +118,13 @@ Make it executable
 ```bash
 chmod +x run_sim.sh
 ```
-To exit press "Ctrl + X", then "Y", and "enter" to save and exit
+To exit press "Ctrl + X", then "Y", and "enter" to save and exit  
+
+You can make new scripts yourself by following the same steps above, but that is the end of of the one-time setup steps. The rest of the steps will be for launching/relaunching the simulation that you will have to repeat if you want to start the sim or run a node.
 
 # Launching the Simulation:
+
+**Step 1:** 
 
 Make sure that you are in the /mnt/c/Users/<your_user>/scripts directory and run
 ```bash
